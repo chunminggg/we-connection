@@ -1,0 +1,34 @@
+<view class="page">
+
+  <!-- 特价 -->
+  <view class='saleView'>
+
+    <view class='saleBody'></view>
+    <swiper class='specialView' indicator-dots="true" autoplay="YES" interval="2000" indicator-active-color="white">
+      <block wx:for="{{specialPriceArray}}" wx:key="*this">
+        <swiper-item style="">
+          <image src="{{item.imageArray[0].url}}" mode="scaleToFill" class='scrollImage' data-id="{{item.id}}" bindtap="clickSpecialPrice"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='stripView'></view>
+ <view class='card' wx:for="{{itemArray}}" wx:for-index="idx" wx:key="*this" bindtap='clickItem' data-itemId="{{idx}}" style='background-image:url({{item.coverImage}})'>
+    <view class='textView'>
+      <view class='nameView'>
+        <text>{{item.name}}</text>
+      </view>
+      <view class='describeView'>
+        <view class='startDate'>
+          <text>{{item.brief}}</text>
+        </view>
+        <view class=' priceText'>
+          <text style="float:right">{{item.price}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+</view>

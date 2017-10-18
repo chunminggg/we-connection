@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/logs/logs",
+    "pages/itemList/itemList",
+    "pages/detail/detail",
+    "pages/reserve/reserve",
+    "pages/specialList/sepicalList",
+    "pages/islands/islands"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#18CBC3",
+    "navigationBarTitleText": "数码通讯元和站",
+    "navigationBarTextStyle": "white"
+  }
+}
