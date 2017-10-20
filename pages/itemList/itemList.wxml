@@ -19,7 +19,7 @@
           <text>{{item.describe}}</text>
         </view>
         <view class="weui-media-box__info__meta thirdline">
-            <view class=''><text class='placeText'>{{item.place}}出发</text> 
+            <view class=''><text class='placeText'>{{item.place}}</text> 
             <text class='priceText'>￥{{item.price}}</text>
           </view>
         </view>

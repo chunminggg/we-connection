@@ -83,6 +83,14 @@ Page({
       url: '../detail/detail?detailId=' + id,
     })
   },
+  clickItem(e){
+    var idx = e.currentTarget.dataset.type
+    let naviTitle = e.currentTarget.dataset.title
+
+    wx.navigateTo({
+      url: `../itemList/itemList?type=${idx}&title=${naviTitle}`,
+    })
+  },
   onShareAppMessage: function (res) {
     if (res.from === 'button') {
 

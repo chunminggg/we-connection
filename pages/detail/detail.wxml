@@ -19,13 +19,8 @@
       <view class="textCenter samallText describeText">{{detailData.describe}}</view>
       <view class="textCenter priceText iconType" style="color:red" bindtap='showPriceView' data-statu="open">￥{{detailData.price}}</view>
 
-      <view class="textCenter samallText placeText">
-        <text class="fa fa-map-marker iconType"></text>
-        <text class='placeText'>{{detailData.place}}出发</text>
-      </view>
-      <view class="textCenter samallText placeText">
-        <text class="fa fa-calendar iconType"></text> {{detailData.startDate}}
-      </view>
+     
+      
     </view>
     <!-- menu -->
     <!-- <view style="padding: 20px 10px; background-color:#eee;">
@@ -37,8 +32,8 @@
     <view class='stripView'></view>
 
     <view class="swiper-tab">
-      <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">线路特色</view>
-      <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">行程介绍</view>
+      <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">套餐内容</view>
+      <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">活动介绍</view>
       <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">费用说明</view>
       <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">预订须知</view>
 

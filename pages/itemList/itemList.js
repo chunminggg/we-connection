@@ -24,6 +24,7 @@ Page({
     wx.setNavigationBarTitle({
       title: options.title,
     })
+
     netTool.getItemList(parseInt(options.type),(data)=>{
       wx.hideLoading()
       if ( data==undefined) {

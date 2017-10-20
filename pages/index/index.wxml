@@ -14,7 +14,7 @@
   </view>
 
   <view class='stripView'></view>
- <view class='card' wx:for="{{itemArray}}" wx:for-index="idx" wx:key="*this" bindtap='clickItem' data-itemId="{{idx}}" style='background-image:url({{item.coverImage}})'>
+ <view class='card' wx:for="{{itemArray}}"     wx:for-index="idx" wx:key="*this" bindtap='clickItem' data-itemId="{{idx}}"   data-title="{{item.name}}" data-type="{{item.type}}" style='background-image:url({{item.coverImage}})'>
     <view class='textView'>
       <view class='nameView'>
         <text>{{item.name}}</text>
