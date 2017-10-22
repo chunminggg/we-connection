@@ -24,46 +24,26 @@ Page({
     myList: [
       {
         id: 'form',
-        name: '线路特色',
+        name: '套餐内容',
         open: false,
 
       },
       {
         id: 'widget',
-        name: '行程介绍',
-        open: false,
-      },
-      {
-        id: 'feedback',
-        name: '费用说明',
-        open: false,
-      },
-      {
-        id: 'nav',
-        name: '预订须知',
+        name: '活动介绍',
         open: false,
       }
     ],
     list: [
       {
         id: 'form',
-        name: '线路特色',
+        name: '套餐内容',
         open: false,
 
       },
       {
         id: 'widget',
-        name: '行程介绍',
-        open: false,
-      },
-      {
-        id: 'feedback',
-        name: '费用说明',
-        open: false,
-      },
-      {
-        id: 'nav',
-        name: '预订须知',
+        name: '活动介绍',
         open: false,
       }
     ]
@@ -89,6 +69,7 @@ Page({
         icon60: data.imageArray[0].url,
         imageArray: localImageArray,
       })
+      debugger
       var list = []
       for (let i = 0, len = that.data.list.length; i < len; i++) {
         var model = that.data.list[i]
@@ -96,13 +77,10 @@ Page({
         list.push(model)
       }
       var line = that.data.list[0].content,
-        line1 = that.data.list[1].content,
-        line2 = that.data.list[2].content,
-        line3 = that.data.list[3].content
+        line1 = that.data.list[1].content
       WxParse.wxParse('line', 'html', line, that, 5)
       WxParse.wxParse('trip', 'html', line1, that, 5)
-      WxParse.wxParse('money', 'html', line2, that, 5)
-      WxParse.wxParse('order', 'html', line3, that, 5)
+      
     }, (error) => {
 
     })

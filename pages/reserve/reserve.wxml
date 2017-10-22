@@ -20,7 +20,7 @@
           <view class="weui-label">住址</view>
         </view>
         <view class="weui-cell__bd">
-          <input bindinput="bindCountInput" type="number" class="weui-input" placeholder="请输入住址" />
+          <input bindinput="bindCountInput" type="text" class="weui-input" placeholder="请输入住址" />
         </view>
       </view>
     </view>

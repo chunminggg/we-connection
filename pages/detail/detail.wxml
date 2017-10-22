@@ -81,7 +81,7 @@
   </scroll-view>
   <button class="weui-footer weui-footer_fixed-bottom footer" bindtap='orderItemAction' >
 
-    <text class='fa fa-phone phoneIcon'></text>
+    <!-- <text class='fa fa-phone phoneIcon'></text> -->
 
     <text> 立即预定</text>
   </button>
