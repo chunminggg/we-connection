@@ -17,10 +17,10 @@
       </view>
       <view class="weui-cell weui-cell_input">
         <view class="weui-cell__hd">
-          <view class="weui-label">人数</view>
+          <view class="weui-label">住址</view>
         </view>
         <view class="weui-cell__bd">
-          <input bindinput="bindCountInput" type="number" class="weui-input" placeholder="请输入人数" />
+          <input bindinput="bindCountInput" type="number" class="weui-input" placeholder="请输入住址" />
         </view>
       </view>
     </view>
@@ -38,8 +38,8 @@
         </view>
       </view>
     </view>
-    <view class="weui-cells__title">其他</view>
-    <view class="weui-cell weui-cell_input">
+    <!-- <view class="weui-cells__title">其他</view> -->
+    <!-- <view class="weui-cell weui-cell_input">
       <view class="weui-cell__hd">
         <view class="weui-label">日期</view>
       </view>
@@ -48,8 +48,8 @@
           <view class="weui-input">{{date}}</view>
         </picker>
       </view>
-    </view>
-    <checkbox-group bindchange="bindAgreeChange">
+    </view> -->
+    <!-- <checkbox-group bindchange="bindAgreeChange">
       <label class="weui-agree" for="weuiAgree">
                 <view class="weui-agree__text">
                     <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
@@ -59,7 +59,7 @@
                     阅读并同意<navigator url="" class="weui-agree__link">《相关条款》</navigator>
                 </view>
             </label>
-    </checkbox-group>
+    </checkbox-group> -->
 
     <view class="weui-btn-area">
       <button class="weui-btn" type="primary" bindtap="submitData">提交</button>

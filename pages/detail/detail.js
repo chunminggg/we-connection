@@ -211,11 +211,6 @@ Page({
       this.setData({
         animationData: animation
       })
-
-
-
-
-
       //关闭  
       if (currentStatu == "close") {
         this.setData(
@@ -282,5 +277,12 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  orderItemAction(){
+
+    wx.navigateTo({
+      url: `../reserve/reserve?id=${this.data.onlyId}`,
+      title:'预定'
+    })
+  },
 })

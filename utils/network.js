@@ -181,14 +181,14 @@ var getTestData = {
   },
   //预定
   reserveItem(data, successCallBack, errorCallBack) {
+    debugger
     var Product = AV.Object.extend('OrderItem')
     var product = new Product()
     var targetItem = AV.Object.createWithoutData('Product', data.itemId)
     product.set('userId', data.userId)
     product.set('phoneNumber', data.phoneNumber)
     product.set('name', data.name)
-    product.set('peopleCount', data.peopleCount)
-    product.set('finishDate', data.finishDate)
+    product.set('address', data.address)
     product.set('targetItem', targetItem)
     product.save().then((todo) => {
       wx.hideLoading()

@@ -1,7 +1,7 @@
 var network = require('../../utils/network.js')
 Page({
   data: {
-    date: "2017-09-01",
+    date: "2017-11-01",
     accounts: [],
     accountIndex: 0,
     isAgree: false,
@@ -40,24 +40,31 @@ Page({
   onLoad(options) {
     
     this.setData({
-      onlyId: options.itemId
+      onlyId: options.id
     })
+
   },
   submitData(e){
-    var that = this,
-    userId = wx.getStorageSync('phoneNumber')
-
+    var that = this
     var dict = {
-      userId:userId,
       phoneNumber: that.data.phoneNumber,
       name: that.data.name,
-      peopleCount: that.data.peopleCount,
-      finishDate: that.data.date,
+      address: that.data.peopleCount,
       itemId: that.data.onlyId,
     }
-    wx.showLoading({
-      title: '提交中',
-    })
-    network.reserveItem(dict)
+    debugger
+    if(dict.phoneNumber.length){
+      wx.showLoading({
+        title: '提交中',
+      })
+      network.reserveItem(dict)
+    }
+    else{
+      wx.showToast({
+        title: '手机号码未填写',
+      })
+    }
+ 
   },
+
 });
