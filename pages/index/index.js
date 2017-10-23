@@ -96,7 +96,7 @@ Page({
 
     }
     return {
-      title: '超想去旅行',
+      title: '数码通讯元和站',
       path: '/pages/index/index',
       success: function (res) {
 
